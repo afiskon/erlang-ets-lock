@@ -82,7 +82,7 @@ handle_call({unlock, KeySet}, {Pid, _Tag}, #state{ locked_set = LockedSet, locks
     NewLocksDict =
         case sets:size(NewPidKeySet) of
             0 -> 
-                erlang:demonitor(Monitor),
+                erlang:demonitor(Monitor, [flush]),
                 dict:erase(Pid, LocksDict);
             _ ->
                 dict:store(Pid, {Monitor, NewPidKeySet}, LocksDict)
