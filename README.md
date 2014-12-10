@@ -6,7 +6,7 @@ Simple ETS Locks Manager
 Usage:
 
 ```
-$ rebar compile ct
+$ rebar compile eu
 $ erl -pa ./ebin/
 
 1> l(ets_lock).
