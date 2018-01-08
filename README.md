@@ -23,4 +23,4 @@ ok
 5> ets:tab2list(eax_me).
 [{z,1000},{y,1000},{x,1000}]
 ```
-For more details see discussion at reddit: http://redd.it/1urgxy
+For more details see discussion at reddit: https://redd.it/1urgxy
